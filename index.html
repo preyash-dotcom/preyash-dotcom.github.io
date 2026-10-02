@@ -24,7 +24,7 @@ nav .brand { white-space: nowrap; font-weight: 700; color: var(--green); letter-
 nav ul { list-style: none; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
 nav a { text-decoration: none; color: var(--ink); font-size: .95rem; }
 nav a:hover { color: var(--green); }
-nav .nav-cta { background: var(--green); color: #fff; padding: 7px 16px; border-radius: 8px; font-weight: 600; border: 0; font-size: .95rem; cursor: pointer; font-family: inherit; }
+nav .nav-cta { display: inline-block; background: var(--green); color: #fff; padding: 7px 16px; border-radius: 8px; font-weight: 600; border: 0; font-size: .95rem; cursor: pointer; font-family: inherit; }
 nav .nav-cta:hover { background: var(--green-dark); color: #fff; }
 header.hero { padding: 84px 6vw 56px; background: linear-gradient(135deg, var(--green) 0%, #2f7d51 100%); color: #fff; text-align: center; }
 header.hero h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); margin-bottom: 8px; }
@@ -72,20 +72,7 @@ section h2::after { content: ""; display: block; width: 56px; height: 3px; backg
 .contact .btn.outline { background: transparent; color: var(--green); }
 .contact .btn.outline:hover { background: var(--green-light); }
 footer { text-align: center; padding: 26px; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); }
-#print-resume { display: none; }
 @media (max-width: 640px) { nav .brand { display: none; } nav { justify-content: center; } nav ul { gap: 12px; justify-content: center; } }
-@media print {
-body > *:not(#print-resume) { display: none !important; }
-#print-resume { display: block; font-family: Arial, Helvetica, sans-serif; color: #000; padding: 0; font-size: 10.5pt; line-height: 1.35; }
-#print-resume h1 { font-size: 22pt; text-align: center; }
-#print-resume .sub { text-align: center; color: #1f5f3a; font-weight: 700; margin-bottom: 2pt; }
-#print-resume .contactline { text-align: center; margin-bottom: 8pt; }
-#print-resume h2 { font-size: 11pt; color: #1f5f3a; border-bottom: 1.5pt solid #1f5f3a; margin: 10pt 0 4pt; padding-bottom: 1pt; text-transform: uppercase; }
-#print-resume .row { display: flex; justify-content: space-between; font-weight: 700; margin-top: 5pt; }
-#print-resume ul { margin: 2pt 0 0 16pt; }
-#print-resume li { margin-bottom: 1.5pt; }
-@page { margin: 0.6in; }
-}
 </style>
 </head>
 <body>
@@ -99,7 +86,7 @@ body > *:not(#print-resume) { display: none !important; }
 <li><a href="#education">Education</a></li>
 <li><a href="#certifications">Certifications</a></li>
 <li><a href="#contact">Contact</a></li>
-<li><button class="nav-cta" type="button" onclick="window.print()">Resume (PDF)</button></li>
+<li><a class="nav-cta" href="Preyash-CV.pdf" target="_blank" rel="noopener">Resume (PDF)</a></li>
 </ul>
 </nav>
 <header class="hero" id="statement">
@@ -109,7 +96,7 @@ body > *:not(#print-resume) { display: none !important; }
 <p class="statement">Rutgers Business School student and store manager who pairs banking-level cash accuracy with team leadership to deliver reliable, client-first financial service.</p>
 <div class="btn-row">
 <a class="btn" href="#projects">View My Work</a>
-<button class="btn ghost" type="button" onclick="window.print()">Download Resume (PDF)</button>
+<a class="btn ghost" href="Preyash-CV.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
 </div>
 </header>
 <div class="stats">
@@ -240,43 +227,9 @@ body > *:not(#print-resume) { display: none !important; }
 <div class="btn-row">
 <a class="btn" href="mailto:patelpreyash2252@gmail.com">Email Me</a>
 <a class="btn outline" href="https://www.linkedin.com/in/preyash-patel22/" target="_blank" rel="noopener">LinkedIn</a>
-<button class="btn outline" type="button" onclick="window.print()">Download Resume (PDF)</button>
+<a class="btn outline" href="Preyash-CV.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
 </div>
 </section>
 <footer>&copy; 2026 Preyash Patel</footer>
-<div id="print-resume">
-<h1>Preyash Patel</h1>
-<div class="sub">Bank Teller | Client Service | Cash Handling &amp; Compliance</div>
-<div class="contactline">Edison, New Jersey | patelpreyash2252@gmail.com | linkedin.com/in/preyash-patel22</div>
-<h2>Summary</h2>
-<p>Bank teller with 99% accuracy across 60+ daily transactions, now a store manager leading 15 employees to a 34% revenue increase. ABA-certified in Bank Teller and Customer Service. Brings accurate cash handling, fraud awareness, and a client-first approach to every interaction.</p>
-<h2>Skills</h2>
-<p><strong>Banking:</strong> Cash Handling &amp; Drawer Balancing | Everyday Transactions | Fraud Awareness &amp; Escalation | Compliance Procedures</p>
-<p><strong>Clients:</strong> Client Education | Relationship Building | Problem Solving | Team Training</p>
-<p><strong>Tools:</strong> Microsoft Office | Advanced Excel | Teller Software | Core Banking Systems</p>
-<h2>Work Experience</h2>
-<div class="row"><span>Store Manager | Dunkin' Donuts | Edison, NJ</span><span>April 2023 &ndash; Present</span></div>
-<ul>
-<li>Increased store revenue by 34% and strengthened client retention by implementing sales and service improvements in a high-volume, fast-paced location.</li>
-<li>Maintained accurate cash reconciliation and audit-ready records across daily safe counts and deposit preparation, following internal controls, keeping detailed logs and processing payroll to policy.</li>
-<li>Raised service quality and policy compliance across a team of 15 employees by training, coaching and scheduling them against operational standards.</li>
-<li>Delivered a consistent, high-touch client experience as the front-line leader by resolving client concerns professionally and upholding brand standards and documentation.</li>
-</ul>
-<div class="row"><span>Bank Cashier | State Bank of India | Vadodara, India</span><span>September 2022 &ndash; February 2023</span></div>
-<ul>
-<li>Processed 60+ daily client transactions (deposits, withdrawals, account inquiries) at 99% accuracy by using core banking systems and teller software.</li>
-<li>Protected client and bank assets by keeping a balanced cash drawer and following compliance and security procedures.</li>
-<li>Supported branch risk and loss prevention by identifying and escalating potentially fraudulent or unusual transactions under established procedures.</li>
-<li>Improved service efficiency by educating clients on account services, banking procedures and basic loan products so they could choose the right solution.</li>
-<li>Strengthened new-teller readiness by training 15+ new tellers on policy adherence, transaction accuracy and client service standards.</li>
-</ul>
-<h2>Education</h2>
-<div class="row"><span>Rutgers Business School | New Brunswick, NJ</span><span>May 2025 &ndash; Present</span></div>
-<p>Bachelor of Business Administration | Relevant Courses: Financial Accounting, Financial Management, SQL</p>
-<div class="row"><span>Middlesex County College | Edison, NJ</span><span>May 2023 &ndash; May 2025</span></div>
-<p>Business Administration | GPA 3.8/4.0 | Relevant Courses: Mathematics of Finance, Business Law, Accounting</p>
-<h2>Certifications</h2>
-<p>ABA Bank Teller Certificate | ABA Customer Service Representative Certificate | JPMorgan Chase Investment Banking Job Simulation</p>
-</div>
 </body>
 </html>
