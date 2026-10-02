@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preyash Patel | Portfolio</title>
+<meta name="description" content="Portfolio of Preyash Patel: banking, client service, and cash handling & compliance.">
+<style>
+:root { --green: #1f5f3a; --green-light: #e8f2ec; --ink: #1c2420; --muted: #5a665f; --bg: #fafbfa; --card: #ffffff; --line: #dde5e0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.6; }
+a { color: var(--green); }
+nav { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.95); border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; padding: 14px 6vw; }
+nav .brand { font-weight: 700; color: var(--green); letter-spacing: .3px; }
+nav ul { list-style: none; display: flex; gap: 22px; }
+nav a { text-decoration: none; color: var(--ink); font-size: .95rem; }
+nav a:hover { color: var(--green); }
+header.hero { padding: 90px 6vw 70px; background: linear-gradient(135deg, var(--green) 0%, #2f7d51 100%); color: #fff; text-align: center; }
+header.hero h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); margin-bottom: 8px; }
+header.hero .role { font-size: 1.05rem; opacity: .9; margin-bottom: 26px; letter-spacing: .5px; }
+header.hero .statement { max-width: 760px; margin: 0 auto 30px; font-size: clamp(1.1rem, 2.4vw, 1.4rem); font-weight: 500; }
+.btn { display: inline-block; padding: 12px 26px; border-radius: 8px; background: #fff; color: var(--green); font-weight: 600; text-decoration: none; }
+.btn:hover { background: var(--green-light); }
+section { padding: 64px 6vw; max-width: 1050px; margin: 0 auto; }
+section h2 { font-size: 1.7rem; color: var(--green); margin-bottom: 8px; }
+section h2::after { content: ""; display: block; width: 56px; height: 3px; background: var(--green); margin-top: 8px; border-radius: 2px; }
+.lead { color: var(--muted); margin: 14px 0 28px; }
+.skills-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.skill-group { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+.skill-group h3 { font-size: 1.05rem; margin-bottom: 12px; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag { background: var(--green-light); color: var(--green); padding: 5px 12px; border-radius: 999px; font-size: .88rem; font-weight: 500; }
+.projects { display: grid; gap: 22px; }
+.project { background: var(--card); border: 1px solid var(--line); border-left: 5px solid var(--green); border-radius: 12px; padding: 24px 26px; }
+.project h3 { font-size: 1.2rem; margin-bottom: 2px; }
+.project .meta { color: var(--muted); font-size: .9rem; margin-bottom: 12px; }
+.project ul { margin-left: 20px; }
+.project li { margin-bottom: 6px; }
+.contact { text-align: center; }
+.contact h2::after { margin-left: auto; margin-right: auto; }
+.contact p { margin: 16px 0 22px; color: var(--muted); }
+.contact .btn { background: var(--green); color: #fff; }
+.contact .btn:hover { background: #17492c; }
+footer { text-align: center; padding: 26px; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); }
+@media (max-width: 600px) { nav ul { gap: 14px; } nav .brand { display: none; } nav { justify-content: center; } }
+</style>
+</head>
+<body>
+<nav>
+<span class="brand">Preyash Patel</span>
+<ul>
+<li><a href="#statement">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<header class="hero" id="statement">
+<h1>Preyash Patel</h1>
+<p class="role">Bank Teller &nbsp;|&nbsp; Client Service &nbsp;|&nbsp; Cash Handling &amp; Compliance</p>
+<p class="statement">Rutgers Business School student and store manager who pairs banking-level cash accuracy with team leadership to deliver reliable, client-first financial service.</p>
+<a class="btn" href="#projects">View My Work</a>
+</header>
+<section id="skills">
+<h2>Skills</h2>
+<p class="lead">What I bring to a banking or finance team.</p>
+<div class="skills-grid">
+<div class="skill-group">
+<h3>Banking</h3>
+<div class="tags">
+<span class="tag">Cash Handling</span>
+<span class="tag">Drawer Balancing</span>
+<span class="tag">Everyday Transactions</span>
+<span class="tag">Fraud Awareness &amp; Escalation</span>
+<span class="tag">Compliance Procedures</span>
+</div>
+</div>
+<div class="skill-group">
+<h3>Clients &amp; Teams</h3>
+<div class="tags">
+<span class="tag">Client Education</span>
+<span class="tag">Relationship Building</span>
+<span class="tag">Problem Solving</span>
+<span class="tag">Team Training</span>
+<span class="tag">Scheduling &amp; Payroll</span>
+</div>
+</div>
+<div class="skill-group">
+<h3>Tools</h3>
+<div class="tags">
+<span class="tag">Microsoft Office</span>
+<span class="tag">Advanced Excel</span>
+<span class="tag">Teller Software</span>
+<span class="tag">Core Banking Systems</span>
+<span class="tag">SQL (coursework)</span>
+</div>
+</div>
+</div>
+</section>
+<section id="projects">
+<h2>Projects</h2>
+<p class="lead">Real-world work where I owned the results.</p>
+<div class="projects">
+<article class="project">
+<h3>Store Operations &amp; Revenue Growth</h3>
+<p class="meta">Store Manager, Dunkin' Donuts &middot; Edison, NJ &middot; April 2023 &ndash; Present</p>
+<ul>
+<li>Implemented sales and service improvements that increased store revenue by <strong>34%</strong> and strengthened client retention.</li>
+<li>Led, trained, and scheduled a team of <strong>15 employees</strong> in a high-volume location.</li>
+<li>Kept audit-ready records through daily cash reconciliation, safe counts, deposit preparation, and payroll processing.</li>
+</ul>
+</article>
+<article class="project">
+<h3>Branch Teller Operations</h3>
+<p class="meta">Bank Cashier, State Bank of India &middot; Vadodara, India &middot; Sept 2022 &ndash; Feb 2023</p>
+<ul>
+<li>Processed <strong>60+ daily transactions</strong> (deposits, withdrawals, account inquiries) at <strong>99% accuracy</strong>.</li>
+<li>Flagged and escalated unusual transactions to support branch risk and loss prevention.</li>
+<li>Trained <strong>15+ new tellers</strong> on policy adherence, accuracy, and client service standards.</li>
+</ul>
+</article>
+<article class="project">
+<h3>Banking Credentials &amp; Job Simulation</h3>
+<p class="meta">Certifications &middot; Professional development</p>
+<ul>
+<li>ABA Bank Teller Certificate</li>
+<li>ABA Customer Service Representative Certificate</li>
+<li>JPMorgan Chase Investment Banking Job Simulation</li>
+</ul>
+</article>
+</div>
+</section>
+<section class="contact" id="contact">
+<h2>Get in Touch</h2>
+<p>Edison, New Jersey &middot; Open to banking, client service, and finance opportunities.</p>
+<a class="btn" href="mailto:patelpreyash2252@gmail.com">Email Me</a>
+</section>
+<footer>&copy; 2026 Preyash Patel</footer>
+</body>
+</html>
