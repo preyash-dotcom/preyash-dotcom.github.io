@@ -19,8 +19,8 @@ a { color: var(--green); }
 a:focus-visible, button:focus-visible { outline: 3px solid #f2b705; outline-offset: 3px; }
 .skip { position: absolute; left: -999px; top: 8px; background: #fff; color: var(--green); padding: 8px 14px; border-radius: 6px; z-index: 100; }
 .skip:focus { left: 8px; }
-nav { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.96); border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; padding: 12px 6vw; gap: 16px; }
-nav .brand { font-weight: 700; color: var(--green); letter-spacing: .3px; }
+nav { position: sticky; top: 0; z-index: 10; background: #ffffff; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; padding: 12px 6vw; gap: 16px; }
+nav .brand { white-space: nowrap; font-weight: 700; color: var(--green); letter-spacing: .3px; }
 nav ul { list-style: none; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
 nav a { text-decoration: none; color: var(--ink); font-size: .95rem; }
 nav a:hover { color: var(--green); }
@@ -37,7 +37,8 @@ header.hero .statement { max-width: 760px; margin: 0 auto 30px; font-size: clamp
 .btn.ghost { background: transparent; color: #fff; }
 .btn.ghost:hover { background: rgba(255,255,255,.15); }
 .stats { background: #fff; border-bottom: 1px solid var(--line); }
-.stats-inner { max-width: 1050px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; padding: 26px 6vw; text-align: center; }
+.stats-inner { max-width: 1050px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 40px; padding: 26px 6vw; text-align: center; }
+.stat { min-width: 120px; }
 .stat .num { font-size: 2rem; font-weight: 700; color: var(--green); line-height: 1.1; }
 .stat .lbl { font-size: .88rem; color: var(--muted); }
 section { padding: 60px 6vw; max-width: 1050px; margin: 0 auto; }
@@ -238,6 +239,7 @@ body > *:not(#print-resume) { display: none !important; }
 <p>Edison, New Jersey &middot; Open to bank teller, client service, and finance opportunities.</p>
 <div class="btn-row">
 <a class="btn" href="mailto:patelpreyash2252@gmail.com">Email Me</a>
+<a class="btn outline" href="https://www.linkedin.com/in/preyash-patel22/" target="_blank" rel="noopener">LinkedIn</a>
 <button class="btn outline" type="button" onclick="window.print()">Download Resume (PDF)</button>
 </div>
 </section>
@@ -245,7 +247,7 @@ body > *:not(#print-resume) { display: none !important; }
 <div id="print-resume">
 <h1>Preyash Patel</h1>
 <div class="sub">Bank Teller | Client Service | Cash Handling &amp; Compliance</div>
-<div class="contactline">Edison, New Jersey | patelpreyash2252@gmail.com</div>
+<div class="contactline">Edison, New Jersey | patelpreyash2252@gmail.com | linkedin.com/in/preyash-patel22</div>
 <h2>Summary</h2>
 <p>Bank teller with 99% accuracy across 60+ daily transactions, now a store manager leading 15 employees to a 34% revenue increase. ABA-certified in Bank Teller and Customer Service. Brings accurate cash handling, fraud awareness, and a client-first approach to every interaction.</p>
 <h2>Skills</h2>
